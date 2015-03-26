@@ -83,7 +83,7 @@ public final class SAXUtils {
 	}
 
 	public static final int getIntAttributeOrThrow(final Attributes pAttributes, final String pAttributeName) {
-		return Integer.parseInt(SAXUtils.getAttributeOrThrow(pAttributes, pAttributeName));
+		return (int) Float.parseFloat(SAXUtils.getAttributeOrThrow(pAttributes, pAttributeName));
 	}
 
 
